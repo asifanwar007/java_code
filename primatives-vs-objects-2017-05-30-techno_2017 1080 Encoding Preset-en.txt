@@ -1,0 +1,96 @@
+Up until now, you're probably pretty comfortable working with
+certain types of data.
+But you probably haven't noticed the distinction between what
+we call primitives and what we would call an object.
+So lets start, and just remember exactly what primitive data is.
+A primitive is a type of data in Java that's
+considered the simplest form of data.
+It's so simple that it's stored directly in memory.
+These are things like ints, chars, doubles booleans.
+And when you create a new variable of type int, which is
+a primitive, the computer separates out a box in memory
+with the name and the value of that int right directly there.
+So whenever you pass this into round or you pass it in as
+parameter or copy it, you're copying the value.
+So you're creating a brand new version of this every time you
+manipulate it.
+This is called value semantics.
+Because primitives are so
+simple, we can do direct mathematical operations on them
+with the characters we're probably pretty used to using
+from our calculators.
+Things like addition, subtraction, division,
+and so on.
+There's also a number of shortcuts that you can apply
+directly to primitives to increase their value, or
+decrease it, or add into it.
+So if that's a primitive then what's an object?
+An object is a much more complicated type of data,
+because really it's a way of storing multiple pieces
+of related information and the different things you can
+do with that information under a single data type.
+But don't be intimidated,
+you've probably already been using objects.
+Things like Strings, Arrays, Scanner and
+ArrayList are all considered objects.
+And you can notice, they all start with a capital letter in
+Java, just to be extra clear.
+When you create a new variable that is of type object, like for
+example, an Array of ints, the computer separates out a box and
+memory for the reference to where that code is
+actually gonna store that data.
+Then, when you pass this around as a parameter,
+you're passing the reference, not the actual data.
+This is called reference semantics.
+And it's because objects are gonna be so much bigger
+in memory, it doesn't want to keep copying them around.
+So you always need to be paying attention to when you're
+actually copying the reference to an object or
+the object's data itself.
+Because objects are more complicated,
+you can't do things like addition and
+subtraction the way you would with simple primitive numbers.
+But, because objects come with their own behavior baked in,
+a lot of times you just have to look at the methods of an object
+to know what you can do with it.
+For example, if you wanna know how many characters are in
+a String, you call the .length method.
+Or if you want to get the next hint from the user,
+you call it .nextInt from the Scanner.
+Each object has its own set of behaviors that you can look up
+independently.
+Before I get too much deeper into objects,
+there's one thing we need to talk about.
+And that's the special keyword called null.
+Null is just a word that literally means no object.
+Essentially it's the 0 value for an object.
+Just like 0 is the 0 value for int, or
+0.0 is the 0 value for double.
+Null is the 0 value for all different types of objects.
+So let's say we make a new array of Strings.
+If we were making a new array of chars,
+we know that it would store the 0 value for care.
+But what does it store in this case when we make
+a bunch of Strings?
+That's where null comes in.
+That's what's automatically filled into the array, meaning
+hey, an object can be here, but there is none here and now.
+This is important to know because, chances are,
+you're gonna run into a very common type of exception called
+a Null Pointer Exception.
+This usually happens when you try to perform a method
+on a object that is null.
+For example, let's say, we want to get the length of the String
+that's stored at the very first index of this array.
+There is no string there, so
+we get what's called a Null Pointer Exception.
+Hey you can't call length on something that doesn't exist.
+Keep in mind that null means no object, not empty object.
+So for example you can call .length on an empty String.
+It's length is zero.
+But there is no such thing as length
+of something that doesn't exist.
+Chances are you're going to get plenty of practice with null
+just by encountering errors along the way.
+Just important to know that null means no object here, so if it's
+missing, you've got to find a way to put an object there.
